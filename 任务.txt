@@ -1,0 +1,72 @@
+
+apollo的base_map.txt文件的消息内容为：
+left_boundary {
+    curve {
+      segment {
+        line_segment {
+          point {
+            x: 459751.699
+            y: 4400696.642
+            z: 0
+          }
+          point {
+            x: 459744.029
+            y: 4400678.994
+            z: 0
+          }
+          point {
+类似于这样
+对apollO的base_map的地图通过proto格式的文本进行转换成下述格式，请依据下述格式输出outout.osm文件
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' generator='JOSM'>
+  <node id='1093' visible='true' version='1' lat='35.90355580062' lon='139.93339979023'>
+    <tag k='ele' v='-1.4624993801116943' />
+    <tag k='subtype' v='' />
+    <tag k='type' v='' />
+  </node>
+  </node>
+  <node id='120638' visible='true' version='1' lat='35.9036164058' lon='139.93331026269'>
+    <tag k='ele' v='-1.5301473140716553' />
+  </node>
+  <node id='120639' visible='true' version='1' lat='35.90362960899' lon='139.93335183968'>
+    <tag k='ele' v='-1.6641528606414795' />
+  </node>
+
+  <way id='34424' visible='true' version='1'>
+    <nd ref='30649' />
+    <nd ref='33664' />
+    <tag k='subtype' v='' />
+    <tag k='type' v='' />
+  </way>
+  <way id='34649' visible='true' version='1'>
+    <nd ref='2677' />
+    <nd ref='5728' />
+    <nd ref='5737' />
+    <nd ref='5665' />
+    <nd ref='5746' />
+    <nd ref='5674' />
+    <nd ref='5755' />
+    <nd ref='5764' />
+    <nd ref='5683' />
+    <nd ref='5773' />
+    <nd ref='5782' />
+    <nd ref='5692' />
+    <nd ref='5791' />
+    <nd ref='5701' />
+    <nd ref='5800' />
+    <nd ref='5809' />
+    <nd ref='5710' />
+    <nd ref='4369' />
+    <tag k='subtype' v='' />
+    <tag k='type' v='' />
+
+  <relation id='34378' visible='true' version='1'>
+    <member type='way' ref='34374' role='left' />
+    <member type='way' ref='34377' role='right' />
+    <tag k='subtype' v='crosswalk' />
+    <tag k='type' v='lanelet' />
+  </relation>
+请生成具体的代码完成上述转换，实现base_map.txt到output.osm
+
+
+
